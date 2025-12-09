@@ -1,0 +1,5 @@
+FROM puckel/docker-airflow:1.10.9
+
+USER root
+RUN pip install --no-cache-dir pandas psycopg2-binary prometheus_client requests
+USER airflow

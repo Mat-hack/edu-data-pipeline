@@ -1,0 +1,16 @@
+ticket_id,student_id,subject,description,priority,status,category,created_date,resolved_date
+TKT001,STU001,Cannot access course videos,I have paid for the course but videos are not loading. Getting error 404 on every video. This is very frustrating as I have an exam next week.,High,Open,Technical,2024-02-01,
+TKT002,STU003,Payment failed but money deducted,I tried to pay for the advanced course but payment failed. However Rs 55000 was deducted from my account. Please help urgently!,Critical,In Progress,Payment,2024-02-01,
+TKT003,STU005,Certificate not received,I completed the course 2 weeks ago but still haven't received my certificate. The dashboard shows 100% completion. When will I get it?,Medium,Open,Certificate,2024-02-02,
+TKT004,STU007,Great course experience,Just wanted to say thank you! The data science course was excellent. The instructor explained everything so well. Highly recommend!,Low,Closed,Feedback,2024-02-02,2024-02-02
+TKT005,STU009,Quiz answers are wrong,The quiz in Module 3 has incorrect answers marked. I selected the right option but it shows wrong. Please check and correct my score.,High,Open,Content,2024-02-03,
+TKT006,STU011,Refund request,I enrolled by mistake and want a refund. I haven't started any modules yet. Please process my refund as soon as possible.,High,In Progress,Payment,2024-02-03,
+TKT007,STU013,Slow video streaming,Videos are buffering a lot even though I have good internet. Other streaming sites work fine. Is there a server issue?,Medium,Open,Technical,2024-02-04,
+TKT008,STU015,Need invoice for reimbursement,My company will reimburse the course fee. Can you please provide a GST invoice? I need it by end of this week.,Medium,Resolved,Billing,2024-02-04,2024-02-05
+TKT009,STU017,Assignment submission failed,I tried to submit my assignment but got an error. The deadline is tomorrow. Please help! I have worked on this for 3 days.,Critical,Open,Technical,2024-02-05,
+TKT010,STU019,Course content outdated,Some of the content in the web development course is outdated. React version used is old. Can you please update?,Low,Open,Content,2024-02-05,
+TKT011,STU021,Instructor response slow,I asked a question 5 days ago but no response from instructor. This is unacceptable for a paid course!,High,In Progress,Support,2024-02-06,
+TKT012,STU023,Login issues on mobile app,Cannot login to mobile app. It works fine on web. Getting "Invalid credentials" error even though password is correct.,Medium,Open,Technical,2024-02-06,
+TKT013,STU025,Request for extension,Due to medical emergency I couldn't complete the course on time. Can I please get a 2 week extension? I have doctor's certificate.,High,Resolved,Academic,2024-02-07,2024-02-08
+TKT014,STU027,Terrible experience overall,Worst course ever. Content is boring instructor doesn't explain properly and support is useless. Complete waste of money. Want full refund!,Critical,Open,Complaint,2024-02-07,
+TKT015,STU029,Doubt about career guidance,I completed the course but unsure how to apply for jobs. Do you provide placement assistance or career guidance sessions?,Low,Open,Career,2024-02-08,

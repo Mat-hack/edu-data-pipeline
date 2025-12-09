@@ -1,0 +1,31 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+
+# Virtual environments
+venv/
+.env
+.env/
+.env.local
+.envrc
+hero_vired/
+
+# Editor/OS
+.DS_Store
+.vscode/
+.idea/
+
+# Testing / coverage
+.pytest_cache/
+.coverage*
+htmlcov/
+
+# Logs
+*.log
+
+# Docker
+*.pid

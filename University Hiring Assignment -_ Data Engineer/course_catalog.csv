@@ -1,0 +1,11 @@
+course_id,course_name,category,difficulty,duration_hours,price,instructor_name,is_active
+CRS001,Full Stack Web Development,Technology,Intermediate,120,50000,Dr. Rajesh Kumar,TRUE
+CRS002,Data Science Fundamentals,Technology,Beginner,80,45000,Prof. Priya Sharma,TRUE
+CRS003,Machine Learning Advanced,Technology,Advanced,100,55000,Dr. Amit Patel,TRUE
+CRS004,Digital Marketing Mastery,Business,Intermediate,60,35000,Ms. Sneha Gupta,TRUE
+CRS005,Business Analytics,Business,Beginner,50,40000,Mr. Vikram Singh,TRUE
+CRS006,UI/UX Design Principles,Design,Beginner,40,30000,Ms. Ananya Reddy,TRUE
+CRS007,Cloud Computing AWS,Technology,Intermediate,90,52000,Dr. Suresh Nair,TRUE
+CRS008,Python Programming,Technology,Beginner,60,25000,Prof. Meera Iyer,TRUE
+CRS009,Project Management PMP,Business,Advanced,70,48000,Mr. Karthik Menon,TRUE
+CRS010,Graphic Design Essentials,Design,Beginner,45,28000,Ms. Divya Krishnan,TRUE

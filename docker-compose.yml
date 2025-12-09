@@ -1,0 +1,76 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: eduflow
+      POSTGRES_PASSWORD: eduflowpass
+      POSTGRES_DB: eduflow
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./init_db:/docker-entrypoint-initdb.d
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.4.1
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    ports:
+      - "2181:2181"
+  kafka:
+    build:
+      context: .
+      dockerfile: Dockerfile.kafka
+    image: eduflow-kafka:latest
+    depends_on:
+      - zookeeper
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: 'zookeeper:2181'
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      METRICS_PORT: 8001
+      PG_DSN: postgresql://eduflow:eduflowpass@postgres:5432/eduflow
+    ports:
+      - "9092:9092"
+  airflow:
+    build:
+      context: .
+      dockerfile: Dockerfile.airflow
+    image: eduflow-airflow:latest
+    restart: always
+    env_file:
+      - .env
+    environment:
+      - LOAD_EX=y
+      - EXECUTOR=Local
+      # Pre-generated fernet key for Airflow secrets (must be 32 url-safe base64 bytes)
+      - AIRFLOW__CORE__FERNET_KEY=6X2OCuHcQIOAtcQa8aeGeqCAdz-ziEtGlUZEM6I4vGU=
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://eduflow:eduflowpass@postgres:5432/eduflow
+      - LANGGRAPH_ENDPOINT=http://langgraph:8000/api
+      - METRICS_PORT=8001
+      - PYTHONPATH=/usr/local/airflow:/usr/local/airflow/plugins
+    volumes:
+      - ./dags:/usr/local/airflow/dags
+      - ./operators:/usr/local/airflow/plugins/operators
+      - ./input_data:/usr/local/airflow/input_data
+    depends_on:
+      - postgres
+    ports:
+      - "8080:8080"
+  prometheus:
+    image: prom/prometheus:latest
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+    depends_on:
+      - airflow
+      - kafka
+volumes:
+  pgdata:

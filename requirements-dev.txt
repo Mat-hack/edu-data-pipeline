@@ -1,0 +1,2 @@
+# Minimal dev/test dependencies (runtime handled by Docker images)
+pytest==9.0.2

@@ -1,0 +1,32 @@
+student_id,full_name,email,phone,dob,gender,city,state,enrollment_date,program_id,fee_paid,payment_status
+STU001,JOHN DOE,john.doe@gmail.com,9876543210,1999-05-15,Male,Mumbai,Maharashtra,2024-01-15,PROG001,50000,Paid
+stu-002,jane smith,jane@email,+91-9876543211,15/05/1999,F,mumbai,MH,15-Jan-2024,prog001,50000,paid
+STU_003,  Bob  Wilson  ,bob.wilson@company.co.in,98765-43212,May 15, 1999,m,MUMBAI ,maharashtra,2024/01/16,PROG002,"50,000",PAID
+stu004,ALICE JOHNSON,alice.johnson@gmail.com,+919876543213,1998-12-20,Female,Banglore,Karnataka,2024-01-17,PROG001,₹50000,Pending
+STU005,charlie brown,charlie@gmail.com,9876543214,20-12-1998,MALE,Bangalore,karnataka,17/01/2024,PROG002,50000.00,paid
+STU-006,  DAVID LEE  ,david.lee@email.com,+91-98765-43215,Dec 20, 1998,M,Pune,Maharashtra,2024-01-18,PROG003,45000,Paid
+stu_007,eva martinez,eva@invalid,9876543216,1997-08-10,female,pune,MH,18-Jan-24,PROG001,50000,pending
+STU008,FRANK WILSON,frank.wilson@gmail.com,98765 43217,10/08/1997,Male,Hyderabad,Telangana,2024-01-19,PROG002,55000,Paid
+STU009,grace kim,,+91-9876543218,1996-03-25,F,hyderabad,TS,19/01/2024,prog003,55000,PAID
+STU010,  henry zhang  ,henry.zhang@company.in,9876543219,25-03-1996,m,Chennai,Tamil Nadu,2024-01-20,PROG001,50000,Paid
+STU011,ISABELLA GARCIA,isabella@gmail.com,+919876543220,1999-11-30,Female,chennai,TN,20-Jan-2024,PROG002,50000,paid
+stu-012,jack robinson,jack.robinson@email.co.in,98765-43221,30/11/1999,MALE,Delhi,Delhi,2024/01/21,PROG003,48000,Paid
+STU_013,KATE MILLER,kate.miller@gmail.com,+91 9876543222,Nov 30, 1998,F,delhi,DL,21/01/2024,PROG001,50000,pending
+STU014,liam anderson,liam@email,9876543223,1998-07-05,Male,Mumabi,Maharashtra,2024-01-22,PROG002,50000,Paid
+STU015,  MIA THOMPSON  ,mia.thompson@company.com,+91-9876543224,05/07/1998,female,Kolkata,West Bengal,22-Jan-24,prog003,"52,000",PAID
+STU016,noah white,noah.white@gmail.com,98765-43225,1997-02-14,M,kolkata,WB,2024-01-23,PROG001,₹50000,Paid
+STU017,OLIVIA HARRIS,olivia.harris@email.co.in,+919876543226,14-02-1997,F,Jaipur,Rajasthan,23/01/2024,PROG002,50000,paid
+stu018,peter clark,peter@gmail.com,9876 543227,Feb 14, 1999,Male,jaipur,RJ,24-Jan-2024,PROG003,47000,Pending
+STU019,QUINN LEWIS,,+91-98765-43228,1999-09-22,FEMALE,Ahmedabad,Gujarat,2024/01/25,PROG001,50000,Paid
+STU020,  ryan scott  ,ryan.scott@company.in,9876543229,22/09/1999,m,ahmedabad,GJ,25/01/2024,PROG002,50000,PAID
+STU001,JOHN DOE,john.doe@gmail.com,9876543210,1999-05-15,Male,Mumbai,Maharashtra,2024-01-15,PROG001,50000,Paid
+STU021,SARAH YOUNG,sarah.young@gmail.com,+91-9876543230,1998-04-08,Female,Lucknow,Uttar Pradesh,2024-01-26,prog001,50000,paid
+stu022,thomas king,thomas@invalid_email,98765-43231,08-04-1998,MALE,lucknow,UP,26-Jan-24,PROG002,-50000,Paid
+STU023,  URSULA BAKER  ,ursula.baker@email.com,+919876543232,Apr 8, 1997,F,Bhopal,Madhya Pradesh,2024/01/27,PROG003,50000,Pending
+STU024,victor hill,victor.hill@company.co.in,9876543233,1997-06-17,Male,bhopal,MP,27/01/2024,PROG001,,paid
+STU025,WENDY ADAMS,wendy@gmail.com,+91 98765 43234,17/06/1997,female,Patna,Bihar,2024-01-28,PROG002,50000,Paid
+stu-026,xavier nelson,xavier.nelson@email.in,9876543235,Jun 17, 1999,M,patna,BR,28-Jan-2024,prog003,50000,PAID
+STU_027,  YARA CAMPBELL  ,yara@email,+91-9876543236,1999-01-29,F,Chandigarh,Chandigarh,29/01/2024,PROG001,50000,partial
+STU028,zachary mitchell,zachary.mitchell@gmail.com,98765-43237,29-01-1999,Male,chandigarh,CH,2024-01-30,PROG002,50000,Paid
+STU029,AMY PEREZ,amy.perez@company.com,+919876543238,1998-10-12,FEMALE,Kochi,Kerala,30-Jan-24,PROG003,50000,paid
+STU030,brian turner,,9876543239,12/10/1998,m,kochi,KL,31/01/2024,PROG001,50000,Pending
